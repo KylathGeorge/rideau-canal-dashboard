@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     permissions:
       contents: read #This is required for actions/checkout
 
@@ -28,7 +28,7 @@ jobs:
           npm install
           npm run build --if-present
           npm run test --if-present
-
+      
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
@@ -51,13 +51,13 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_595652B161944509AFA62CCE9B193691 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_9FD744EA17134D0DA4B33D884A4E25C8 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_F7E7E131121F442FA76FFD4AF524166E }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_957CDCBA2D6642429EEAE4EC5CCCF6B0 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_59DCF1AE4CC54C0A99D649B06CCC3092 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_A609A6F80DB24152B591FD1FFA8A60BB }}
 
       - name: 'Deploy to Azure Web App'
-        id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
+        id: deploy-to-webapp
         with:
           app-name: 'rideau-canal-dashboard'
           slot-name: 'Production'
