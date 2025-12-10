@@ -277,13 +277,13 @@ This dashboard gives us visual representation of real-time data and past data (1
 
     ```json
     {
-    "status": "healthy",
-    "timestamp": "2025-12-10T00:48:16.622Z",
-    "cosmosdb": {
-        "endpoint": "configured",
-        "database": "RideauCanalDB",
-        "container": "SensorAggregations"
-    }
+        "status": "healthy",
+        "timestamp": "2025-12-10T00:48:16.622Z",
+        "cosmosdb": {
+            "endpoint": "configured",
+            "database": "RideauCanalDB",
+            "container": "SensorAggregations"
+        }
     }
     ```
 
