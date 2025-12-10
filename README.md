@@ -200,73 +200,92 @@ This dashboard gives us visual representation of real-time data and past data (1
 
    Example response:
 
-```json
-{
-  "success": true,
-  "count": 3,
-  "data": [
+    ```json
     {
-      "windowEndTime": "2025-12-10T00:35:00.0000000Z",
-      "location": "Fifth Avenue",
-      "avgIceThickness": 25.395,
-      "minIceThickness": 13.37,
-      "maxIceThickness": 40.05,
-      "avgSurfaceTemperature": -8.68,
-      "minSurfaceTemperature": -15.75,
-      "maxSurfaceTemperature": 4.38,
-      "maxSnowAccumulation": 47.45,
-      "avgExternalTemp": -3.5725,
-      "readingCount": 4,
-      "safetyStatus": "Caution",
-      "id": "Fifth Avenue-2025-12-10T00:35:00Z",
-      "_rid": "FE1eALTbrdeQAgAAAAAAAA==",
-      "_self": "dbs/FE1eAA==/colls/FE1eALTbrdc=/docs/FE1eALTbrdeQAgAAAAAAAA==/",
-      "_etag": "\"2f009c64-0000-0a00-0000-6938c0520000\"",
-      "_attachments": "attachments/",
-      "_ts": 1765326930
-    },
-    {
-      "windowEndTime": "2025-12-10T00:35:00.0000000Z",
-      "location": "NAC",
-      "avgIceThickness": 30.9225,
-      "minIceThickness": 10.03,
-      "maxIceThickness": 38.98,
-      "avgSurfaceTemperature": -16.485,
-      "minSurfaceTemperature": -19.09,
-      "maxSurfaceTemperature": -10.75,
-      "maxSnowAccumulation": 47.54,
-      "avgExternalTemp": -11.515,
-      "readingCount": 4,
-      "safetyStatus": "Safe",
-      "id": "NAC-2025-12-10T00:35:00Z",
-      "_rid": "FE1eALTbrdeRAgAAAAAAAA==",
-      "_self": "dbs/FE1eAA==/colls/FE1eALTbrdc=/docs/FE1eALTbrdeRAgAAAAAAAA==/",
-      "_etag": "\"2f009d64-0000-0a00-0000-6938c0520000\"",
-      "_attachments": "attachments/",
-      "_ts": 1765326930
-    },
-    {
-      "windowEndTime": "2025-12-10T00:35:00.0000000Z",
-      "location": "Dow's Lake",
-      "avgIceThickness": 32.7775,
-      "minIceThickness": 23.78,
-      "maxIceThickness": 39.77,
-      "avgSurfaceTemperature": -12.7475,
-      "minSurfaceTemperature": -18.08,
-      "maxSurfaceTemperature": -6.87,
-      "maxSnowAccumulation": 40.56,
-      "avgExternalTemp": -12.4025,
-      "readingCount": 4,
-      "safetyStatus": "Safe",
-      "id": "Dow's Lake-2025-12-10T00:35:00Z",
-      "_rid": "FE1eALTbrdeSAgAAAAAAAA==",
-      "_self": "dbs/FE1eAA==/colls/FE1eALTbrdc=/docs/FE1eALTbrdeSAgAAAAAAAA==/",
-      "_etag": "\"2f009e64-0000-0a00-0000-6938c0520000\"",
-      "_attachments": "attachments/",
-      "_ts": 1765326930
+    "success": true,
+    "count": 3,
+    "data": [
+        {
+        "windowEndTime": "2025-12-10T00:35:00.0000000Z",
+        "location": "Fifth Avenue",
+        "avgIceThickness": 25.395,
+        "minIceThickness": 13.37,
+        "maxIceThickness": 40.05,
+        "avgSurfaceTemperature": -8.68,
+        "minSurfaceTemperature": -15.75,
+        "maxSurfaceTemperature": 4.38,
+        "maxSnowAccumulation": 47.45,
+        "avgExternalTemp": -3.5725,
+        "readingCount": 4,
+        "safetyStatus": "Caution",
+        "id": "Fifth Avenue-2025-12-10T00:35:00Z",
+        "_rid": "FE1eALTbrdeQAgAAAAAAAA==",
+        "_self": "dbs/FE1eAA==/colls/FE1eALTbrdc=/docs/FE1eALTbrdeQAgAAAAAAAA==/",
+        "_etag": "\"2f009c64-0000-0a00-0000-6938c0520000\"",
+        "_attachments": "attachments/",
+        "_ts": 1765326930
+        },
+        {
+        "windowEndTime": "2025-12-10T00:35:00.0000000Z",
+        "location": "NAC",
+        "avgIceThickness": 30.9225,
+        "minIceThickness": 10.03,
+        "maxIceThickness": 38.98,
+        "avgSurfaceTemperature": -16.485,
+        "minSurfaceTemperature": -19.09,
+        "maxSurfaceTemperature": -10.75,
+        "maxSnowAccumulation": 47.54,
+        "avgExternalTemp": -11.515,
+        "readingCount": 4,
+        "safetyStatus": "Safe",
+        "id": "NAC-2025-12-10T00:35:00Z",
+        "_rid": "FE1eALTbrdeRAgAAAAAAAA==",
+        "_self": "dbs/FE1eAA==/colls/FE1eALTbrdc=/docs/FE1eALTbrdeRAgAAAAAAAA==/",
+        "_etag": "\"2f009d64-0000-0a00-0000-6938c0520000\"",
+        "_attachments": "attachments/",
+        "_ts": 1765326930
+        },
+        {
+        "windowEndTime": "2025-12-10T00:35:00.0000000Z",
+        "location": "Dow's Lake",
+        "avgIceThickness": 32.7775,
+        "minIceThickness": 23.78,
+        "maxIceThickness": 39.77,
+        "avgSurfaceTemperature": -12.7475,
+        "minSurfaceTemperature": -18.08,
+        "maxSurfaceTemperature": -6.87,
+        "maxSnowAccumulation": 40.56,
+        "avgExternalTemp": -12.4025,
+        "readingCount": 4,
+        "safetyStatus": "Safe",
+        "id": "Dow's Lake-2025-12-10T00:35:00Z",
+        "_rid": "FE1eALTbrdeSAgAAAAAAAA==",
+        "_self": "dbs/FE1eAA==/colls/FE1eALTbrdc=/docs/FE1eALTbrdeSAgAAAAAAAA==/",
+        "_etag": "\"2f009e64-0000-0a00-0000-6938c0520000\"",
+        "_attachments": "attachments/",
+        "_ts": 1765326930
+        }
+    ]
     }
-  ]
-}
-```
+    ```
 
+5. `'/health'` this endpoint checks the health of the service and provides the timestamp of the check and if the Cosmos DB endpoint has been configured, with database name and container name. This way we can check if the front-end is connecting to the database.
+
+    Example request: `http://localhost:3000/health`
+
+    Example response:
+
+    ```json
+    {
+    "status": "healthy",
+    "timestamp": "2025-12-10T00:48:16.622Z",
+    "cosmosdb": {
+        "endpoint": "configured",
+        "database": "RideauCanalDB",
+        "container": "SensorAggregations"
+    }
+    }
+    ```
+
+## Deployment to Azure App Service
 
