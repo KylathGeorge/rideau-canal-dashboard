@@ -6,7 +6,7 @@
 
 ## Overview
 
-### Dashboard Features
+### Dashboard Overview
 
 This dashboard gives us visual representation of real-time data and past data (1-hour) from monitoring devices along the Rideau Canal. The system ingests data from the simulated devices into Azure IoT hub and processes it using Azure Stream Analytics which passes this data to be stored using Azure blob storage and also exposes them to this front-end dashboard using Azure Cosmos DB.
 
@@ -300,3 +300,11 @@ This dashboard gives us visual representation of real-time data and past data (1
 5. Add your github account and choose this repository
 
 6. Create
+
+## Dashboard Features
+
+- Dashboard has an autorefresh function
+- Canal Safety Status
+- 3 Sections, each dedicated to a different location
+- Each section has it's own safety status as well as the average Ice Thickness, Surface temp, and Snow.
+- Graphs that show the past hour history for Ice Thickness Trend and Temperature Trend for each location.
