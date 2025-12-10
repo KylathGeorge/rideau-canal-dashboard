@@ -289,3 +289,14 @@ This dashboard gives us visual representation of real-time data and past data (1
 
 ## Deployment to Azure App Service
 
+1. Create a Web App Service
+
+2. Set up a resource group
+
+3. Use Node 24 runtime stack
+
+4. No database
+
+5. Add your github account and choose this repository
+
+6. Create
